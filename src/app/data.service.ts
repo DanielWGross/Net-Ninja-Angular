@@ -9,7 +9,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   fetchData() {
-    return this.http.get('/assets/ninjas.json');
+    return this.http.get('https://nn-angular-5efdf.firebaseio.com/.json');
   };
 
 }

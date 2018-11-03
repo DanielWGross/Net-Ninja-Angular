@@ -22,10 +22,7 @@ export class DirectoryComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.fetchData()
-      .subscribe(data => {
-        console.log(typeof data)
-        this.ninjas = data
-      })
+      .subscribe(data => this.ninjas = data)
   };
 
 };
