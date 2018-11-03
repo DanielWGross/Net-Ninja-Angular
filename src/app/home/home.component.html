@@ -3,6 +3,8 @@
 </p>
 <ng-content></ng-content>
 
-<input [value]="myString" />
-<input [attr.required]="myBoolean" />
-<button (dblclick)="alertMe('I like beef')">Double click me</button>
+<label>Name:</label><input [(ngModel)]="ninja.name">
+<label>Belt:</label><input [(ngModel)]="ninja.belt">
+
+<p>{{ ninja.name }}</p>
+<p>{{ ninja.belt }}</p>
