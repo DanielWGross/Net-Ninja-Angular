@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 
 const routes: Routes = [
-  { path: 'directory', component: DirectoryComponent },
+  { path: 'directory/:ninja', component: DirectoryComponent },
   { path: '', component: HomeComponent}
 ];
 
