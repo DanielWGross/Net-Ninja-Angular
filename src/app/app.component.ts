@@ -12,4 +12,7 @@ export class AppComponent {
     name: <string> 'Ryu',
     belt: <string> 'Red'
   };
+  yell(e: object): void {
+    alert('I am yelling');
+  };
 };
