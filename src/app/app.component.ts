@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ninja-directory';
-}
+  title: string = 'ninja-directory';
+  name: string = 'ninja';
+  ninja = {
+    name: <string> 'Ryu',
+    belt: <string> 'Red'
+  };
+};
