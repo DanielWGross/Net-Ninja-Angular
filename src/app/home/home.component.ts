@@ -6,13 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  homeTitle = "Welcome to the ninja directory!";
-  myString = "I like chicken";
-  myBoolean = true;
+  homeTitle: string = "Welcome to the ninja directory!";
+  myString: string = "I like chicken";
+  myBoolean: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  alertMe(val:string): void {
+    alert(val);
+  };
 
 }
