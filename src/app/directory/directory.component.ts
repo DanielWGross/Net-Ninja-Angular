@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { LoggingService } from '../logging.service';
 
 @Component({
   selector: 'app-directory',
@@ -13,8 +14,12 @@ export class DirectoryComponent implements OnInit {
     { name: <string> "Crystal", belt: <string> "purple"},
   ];
 
-  constructor() { };
+  constructor(private logger: LoggingService) { };
 
+  logIt() : void {
+    this.logger.log();
+  };
+  
   ngOnInit() {
   }
 
