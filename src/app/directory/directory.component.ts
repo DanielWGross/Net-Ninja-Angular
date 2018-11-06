@@ -27,5 +27,10 @@ export class DirectoryComponent implements OnInit {
 
   fbGetData() {
     firebase.database().ref('/').on('child_added', snapshot => this.ninjas.push(snapshot.val()));
-  }
+  };
+
+  fbPostData(name, belt) {
+    firebase.database().ref('/').push({name, belt})
+  };
+  
 };
